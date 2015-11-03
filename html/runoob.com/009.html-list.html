@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>html无序列表，有序列表，定义列表</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<h2>一、无序列表</h2>
+	<h3>1.基本无序列表</h3>
+	<ul>
+		<li>苹果</li>
+		<li>香蕉</li>
+		<li>梨</li>
+	</ul>
+	<h3>2.无序列表的type属性</h3>
+	<ul>
+		<li type="disc">苹果</li>
+		<li type="circle">香蕉</li>
+		<li type="square">梨</li>
+	</ul>
+	<h3>3.嵌套的无序列表</h3>
+	<ul>
+		<li>苹果
+			<ul>
+				<li>苹果</li>
+				<li>香蕉
+					<ul>
+						<li>苹果</li>
+						<li>香蕉</li>
+						<li>梨
+							<ul>
+								<li>苹果</li>
+								<li>香蕉</li>
+								<li>梨</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>梨</li>
+			</ul>
+		</li>
+		<li>香蕉</li>
+		<li>梨</li>
+	</ul>
+	<h2>二、有序列表</h2>
+	<h3>1.基本有序列表</h3>
+	<ol>
+		<li>苹果</li>
+		<li>香蕉</li>
+		<li>梨</li>
+	</ol>
+	<h3>2.有序列表的type属性</h3>
+	<ol type="a">
+		<li>苹果</li>
+		<li>香蕉</li>
+		<li>梨</li>
+	</ol>
+	<ol type="A">
+		<li>苹果</li>
+		<li>香蕉</li>
+		<li>梨</li>
+	</ol>
+	<ol type="i">
+		<li>苹果</li>
+		<li>香蕉</li>
+		<li>梨</li>
+	</ol>
+	<ol type="I">
+		<li>苹果</li>
+		<li>香蕉</li>
+		<li>梨</li>
+	</ol>
+	<ol type="1">
+		<li>苹果</li>
+		<li>香蕉</li>
+		<li>梨</li>
+	</ol>
+	<h3>3.有序列表的start属性</h3>
+	<ol type="a" start="3">
+		<li>苹果</li>
+		<li>香蕉</li>
+		<li>梨</li>
+	</ol>
+	<ol type="i" start="3">
+		<li>苹果</li>
+		<li>香蕉</li>
+		<li>梨</li>
+	</ol>
+	<ol type="1"  start="3">
+		<li>苹果</li>
+		<li>香蕉</li>
+		<li>梨</li>
+	</ol>
+	<h3>3.有序列表的嵌套</h3>
+	<ol>
+		<li>苹果
+			<ol>
+				<li>苹果</li>
+				<li>香蕉
+					<ol>
+						<li>苹果</li>
+						<li>香蕉</li>
+						<li>梨
+							<ol>
+								<li>苹果</li>
+								<li>香蕉</li>
+								<li>梨</li>
+							</ol>
+						</li>
+					</ol>
+				</li>
+				<li>梨</li>
+			</ol>
+		</li>
+		<li>香蕉</li>
+		<li>梨</li>
+	</ol>
+	<h2>三、定义序列表</h2>
+	<dl>
+		<dt>语文</dt>
+		<dd>中国的一种文字</dd>
+		<dt>计算机</dt>
+		<dd>一种很神奇的东西</dd>
+		<dt>电</dt>
+		<dd>现代社会的基础，如果没有了电，世界将回到原始社会了。</dd>
+	</dl>
+</body>
+</html>
