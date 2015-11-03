@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>html表格</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<!-- 最简单的表格 -->
+	<table>
+		<caption>最简单的表格</caption>
+		<tr>
+			<th>学号</th>
+			<th>姓名</th>
+			<th>语文</th>
+			<th>数学</th>
+			<th>英语</th>
+		</tr>
+		<tr>
+			<td>001</td>
+			<td>李华</td>
+			<td>85</td>
+			<td>92</td>
+			<td>52</td>
+		</tr>
+		<tr>
+			<td>002</td>
+			<td>张文</td>
+			<td>67</td>
+			<td>84</td>
+			<td>69</td>
+		</tr>
+		<tr>
+			<td>003</td>
+			<td>赵思涵</td>
+			<td>89</td>
+			<td>95</td>
+			<td>88</td>
+		</tr>
+	</table>
+	<br>
+	<!-- 有边框的表格 -->
+	<table border="1">
+		<caption>有边框的表格</caption>
+		<tr>
+			<th>学号</th>
+			<th>姓名</th>
+			<th>语文</th>
+			<th>数学</th>
+			<th>英语</th>
+		</tr>
+		<tr>
+			<td>001</td>
+			<td>李华</td>
+			<td>85</td>
+			<td>92</td>
+			<td>52</td>
+		</tr>
+		<tr>
+			<td>002</td>
+			<td>张文</td>
+			<td>67</td>
+			<td>84</td>
+			<td>69</td>
+		</tr>
+		<tr>
+			<td>003</td>
+			<td>赵思涵</td>
+			<td>89</td>
+			<td>95</td>
+			<td>88</td>
+		</tr>
+	</table>
+	<br>
+	<!-- 居中的表格 -->
+	<table border="1" align="center" cellpadding="5" cellspacing="10">
+		<caption>居中的表格</caption>
+		<tr>
+			<th>学号</th>
+			<th>姓名</th>
+			<th>语文</th>
+			<th>数学</th>
+			<th>英语</th>
+		</tr>
+		<tr>
+			<td>001</td>
+			<td>李华</td>
+			<td>85</td>
+			<td>92</td>
+			<td>52</td>
+		</tr>
+		<tr>
+			<td>002</td>
+			<td>张文</td>
+			<td>67</td>
+			<td>84</td>
+			<td>69</td>
+		</tr>
+		<tr>
+			<td>003</td>
+			<td>赵思涵</td>
+			<td>89</td>
+			<td>95</td>
+			<td>88</td>
+		</tr>
+	</table>
+	<br>
+	<!-- 跨行跨列的表格 -->
+	<table border="1" align="center" cellpadding="5" cellspacing="10">
+		<caption>跨行跨列的表格</caption>
+		<tr>
+			<th>学号</th>
+			<th>姓名</th>
+			<th>语文</th>
+			<th>数学</th>
+			<th>英语</th>
+		</tr>
+		<tr>
+			<td>001</td>
+			<td>李华</td>
+			<td colspan="3">85</td>
+		</tr>
+		<tr>
+			<td>002</td>
+			<td>张文</td>
+			<td rowspan="2">67</td>
+			<td>84</td>
+			<td>69</td>
+		</tr>
+		<tr>
+			<td>003</td>
+			<td>赵思涵</td>
+			<td>95</td>
+			<td>88</td>
+		</tr>
+	</table>
+	<br>
+	<!-- 细线边框的表格 -->
+	<table border="0" align="center" cellpadding="5" cellspacing="1" bgcolor="#f00">
+		<caption>细线边框的表格</caption>
+		<tr bgcolor="#fff">
+			<th>学号</th>
+			<th>姓名</th>
+			<th>语文</th>
+			<th>数学</th>
+			<th>英语</th>
+		</tr>
+		<tr bgcolor="#fff">
+			<td>001</td>
+			<td>李华</td>
+			<td colspan="3">85</td>
+		</tr>
+		<tr bgcolor="#fff">
+			<td>002</td>
+			<td>张文</td>
+			<td rowspan="2">67</td>
+			<td>84</td>
+			<td>69</td>
+		</tr>
+		<tr bgcolor="#fff">
+			<td>003</td>
+			<td>赵思涵</td>
+			<td>95</td>
+			<td>88</td>
+		</tr>
+	</table>
+	<br>
+</body>
+</html>
