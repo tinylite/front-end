@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>html注册表单</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<form name="testForm" action="index.php" method="POST" style="width:300px;">
+		<fieldset>
+			<legend>用户注册</legend>
+			账号:<input type="text" value="admin"><br><br>
+			密码:<input type="password" value="admin"><br><br>
+			性别：
+			<input type="radio" name="sex" id="male" value="male">
+			<label for="male">男</label>
+			<input type="radio" name="sex" id="female" value="female" checked>
+			<label for="female">女</label><br><br>
+			兴趣爱好:
+			<input type="checkbox" name="music" value="音乐" checked>音乐
+			<input type="checkbox" name="learn" value="学习">学习
+			<input type="checkbox" name="basketball" value="篮球">篮球<br><br>
+			地址：
+			<select name="address" id="address">
+				<optgroup label="一线城市">
+					<option value="bj">北京</option>
+					<option value="sh">上海</option>
+					<option value="gd">广东</option>
+				</optgroup>
+				<optgroup label="其他地区">
+					<option value="yn" selected>云南</option>
+				</optgroup>
+			</select><br><br>
+			常用联系方式：<br>
+			<select name="contact" id="contact" multiple size="2">
+				<option value="qq">QQ:888888</option>
+				<option value="email">电子邮件:7837938@qq.com</option>
+				<option value="tel">电话:18328937756</option>
+			</select><br><br>
+			个人介绍:<br>
+			<textarea cols="23" rows="6">这里是个人介绍内容</textarea><br>
+			<input type="submit" value="注册">
+		</fieldset>
+	</form>
+</body>
+</html>
