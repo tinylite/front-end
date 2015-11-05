@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>css的背景样式</title>
+	<style type="text/css">
+		.box{width: 600px; height: 300px; margin-bottom: 10px; border: 1px solid #ccc;}
+		.box-color{background-color: #cfc;}
+		.box-image{background-image: url(./img/baidu.jpg);}
+		.box-repeat-x{background-repeat: repeat-x;}
+		.box-repeat-y{background-repeat: repeat-y;}
+		.box-no-repeat{background-repeat: no-repeat;}
+		.box-position{background-position: center center;}
+		.box-atachment{background-atachment: fixed; overflow: auto;}
+		.box-background{background: #cfc url(./img/baidu.jpg) no-repeat center center;}
+	</style>
+</head>
+<body>
+	<div class="box box-color">背景颜色</div>
+	<div class="box box-image">背景图片</div>
+	<div class="box box-image box-repeat-x">背景图片-水平方向平铺</div>
+	<div class="box box-image box-repeat-y">背景图片-垂直方向平铺</div>
+	<div class="box box-image box-no-repeat">背景图片-不平铺</div>
+	<div class="box box-image box-no-repeat box-position">背景图片-位置</div>
+	<div class="box box-image box-no-repeat box-atachment">
+		<p>背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定</p>
+		<p>背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定</p>
+		<p>背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定</p>
+		<p>背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定</p>
+		<p>背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定</p>
+		<p>背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定背景图片固定</p>
+	</div>
+	<div class="box box-background">背景图片-background属性简写</div>
+</body>
+</html>
