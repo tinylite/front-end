@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css控制元素的显示和隐藏</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		.box{margin: 0 auto; width: 390px; height: 146px; border: 1px solid #808080; text-align: center; padding: 4px 0 0 4px;}
+		.box-small{width: 120px; height: 135px; border: 1px solid #808080; margin-right: 8px; float: left;}
+		.box-small img{width: 110px; height: 88px; margin: 3px;}
+		.box-small .button{width: 110px; height: 19px;}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="box-small" id="box1">
+			Box1<br>
+			<img src="./img/klematis_small.jpg"><br>
+			<input class="button" type="button" onclick="removeElement();" value="移除">
+		</div>
+		<div class="box-small" id="box2">
+			Box2<br>
+			<img src="./img/klematis2_small.jpg"><br>
+			<input class="button" type="button" onclick="changeVisibility();" value="隐藏">
+		</div>
+		<div class="box-small" id="box3">
+			Box3<br>
+			<img src="./img/klematis3_small.jpg"><br>
+			<input class="button" type="button" onclick="resetElement();" value="显示所有">
+		</div>
+	</div>
+	<script type="text/javascript">
+		function removeElement(){
+			var box1 = document.getElementById("box1");
+			box1.style.display="none";
+		}
+		function changeVisibility(){
+			var box2 = document.getElementById("box2");
+			box2.style.visibility="hidden";
+		}
+		function resetElement(){
+			var box1 = document.getElementById("box1");
+			var box2 = document.getElementById("box2");
+			box1.style.display="block";
+			box2.style.visibility="visible";
+		}
+	</script>
+</body>
+</html>
