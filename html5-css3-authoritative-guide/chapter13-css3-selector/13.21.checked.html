@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+	<meta charset="UTF-8">
+	<title>UI元素状态伪类选择器</title>
+	<style type="text/css">
+		input[type="checkbox"]:checked{outline: 2px solid blue;}
+		input[type="checkbox"]:-moz-checked{outline: 2px solid blue;}
+	</style>
+</head>
+<body>
+	<form>
+		兴趣：
+		<label><input type="checkbox">阅读</label>
+		<label><input type="checkbox">旅游</label>
+		<label><input type="checkbox">看电影</label>
+		<label><input type="checkbox">上网</label>
+	</form>
+</body>
+</html>
