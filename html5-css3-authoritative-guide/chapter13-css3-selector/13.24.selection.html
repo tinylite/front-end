@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+	<meta charset="UTF-8">
+	<title>UI元素状态伪类选择器</title>
+	<style type="text/css">
+		p::selection{background: red; color: #FFF;}
+		input[type="text"]::selection{background: gray; color: #FFFF;}
+		td::selection{background: green; color: #FFF;}
+		p::-moz-selection{background: red; color: #FFF;}
+		input[type="text"]::-moz-selection{background: gray; color: #FFFF;}
+		td::-moz-selection{background: green; color: #FFF;}
+	</style>
+</head>
+<body>
+	<p>这是一段测试文字</p>
+	<p><input type="text" value="这是一段测试文字"></p>
+	<table border="1" cellspacing="0" cellpadding="0">
+		<tr>
+			<td>测试文字</td>
+			<td>测试文字</td>
+		</tr>
+		<tr>
+			<td>测试文字</td>
+			<td>测试文字</td>
+		</tr>
+	</table>
+</body>
+</html>
