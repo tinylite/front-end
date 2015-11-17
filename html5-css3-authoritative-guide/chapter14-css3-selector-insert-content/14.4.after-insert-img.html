@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+	<meta charset="UTF-8">
+	<title>使用选择器在页面中插入内容</title>
+	<style type="text/css">
+		h1.head01:after{content: url(./img/new.gif);}
+		h1.head02{
+			background-image: url(./img/new.gif); background-repeat: no-repeat; background-position: 80px center;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="head01">标题A</h1>
+	<h1 class="head02">标题B</h1>
+</body>
+</html>
