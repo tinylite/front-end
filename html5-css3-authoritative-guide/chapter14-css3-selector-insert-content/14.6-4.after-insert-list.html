@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+	<meta charset="UTF-8">
+	<title>使用选择器在页面中插入内容</title>
+	<style type="text/css">
+		h1:before{content: counter(mycounter,upper-alpha)".";}
+		h1{counter-increment: mycounter;}
+	</style>
+</head>
+<body>
+	<h1>大标题</h1>
+	<p>示例文字</p>
+	<h1>大标题</h1>
+	<p>示例文字</p>
+	<h1>大标题</h1>
+	<p>示例文字</p>
+</body>
+</html>
