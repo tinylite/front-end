@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+	<meta charset="UTF-8">
+	<title>使用选择器在页面中插入内容</title>
+	<style type="text/css">
+		h1:before{content: counter(mycounter)".";}
+		h1{counter-increment: mycounter; counter-reset: subcounter;}
+		h2:before{content: counter(mycounter) "-" counter(subcounter) ".";}
+		h2{counter-increment: subcounter; conter-increment: subcounter; counter-reset: subsubcounter; margin-left: 40px;}
+		h3:before{content: counter(mycounter) "-" counter(subcounter) "-" counter(subsubcounter) ".";}
+		h3{counter-increment: subsubcounter; margin-left: 80px;}
+	</style>
+</head>
+<body>
+	<h1>大标题</h1>
+	<h2>中标题</h2>
+	<h3>小标题</h3>
+	<h3>小标题</h3>
+	<h2>中标题</h2>
+	<h3>小标题</h3>
+	<h3>小标题</h3>
+	<h1>大标题</h1>
+	<h2>中标题</h2>
+	<h3>小标题</h3>
+	<h3>小标题</h3>
+	<h2>中标题</h2>
+	<h3>小标题</h3>
+	<h3>小标题</h3>
+</body>
+</html>
