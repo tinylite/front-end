@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+	<meta charset="UTF-8">
+	<title>css3中完整表格构成示例</title>
+	<style>
+		.table{
+			display: table;
+			border: 3px solid #00aaff;
+		}
+		.caption{
+			display: table-caption;
+			text-align: center;
+		}
+		.tr{
+			display: table-row;
+		}
+		.td{
+			display: table-cell;
+			border: 2px solid #aaff00;
+			padding: 10px;
+		}
+		thead{
+			display: table-header-group;
+			background-color: #ffffaa;
+		}
+	</style>
+</head>
+<body>
+	<div class="table">
+		<div class="caption">字母表</div>
+		<div class="thead">
+			<div class="tr">
+				<div class="td">1st</div>
+				<div class="td">2nd</div>
+				<div class="td">3rd</div>
+				<div class="td">4th</div>
+				<div class="td">5th</div>
+			</div>
+			<div class="tr">
+				<div class="td">A</div>
+				<div class="td">B</div>
+				<div class="td">C</div>
+				<div class="td">D</div>
+				<div class="td">E</div>
+			</div>
+			<div class="tr">
+				<div class="td">F</div>
+				<div class="td">G</div>
+				<div class="td">H</div>
+				<div class="td">I</div>
+				<div class="td">J</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
