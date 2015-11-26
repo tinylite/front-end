@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+	<meta charset="UTF-8">
+	<title>box-sizing的演示例子</title>
+	<style>
+		div{
+			width: 300px;
+			border: 30px solid #ffaa00;
+			padding: 30px;
+			background-color: #ffff00;
+			margin: 20px auto;
+		}
+		div#div1{
+			box-sizing: content-box;
+			-webkit-box-sizing: content-box;
+			-moz-box-sizing: content-box;
+			-ms-box-sizing: content-box;
+		}
+		div#div2{
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-ms-box-sizing: border-box;
+		}
+		div#div3{
+			box-sizing: padding-box;
+			-webkit-box-sizing: padding-box;
+			-moz-box-sizing: padding-box;
+			-ms-box-sizing: padding-box;
+		}
+	</style>
+</head>
+<body>
+	<div id="div1">示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字</div>
+	<div id="div2">示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字</div>
+	<div id="div3">示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字</div>
+</body>
+</html>
