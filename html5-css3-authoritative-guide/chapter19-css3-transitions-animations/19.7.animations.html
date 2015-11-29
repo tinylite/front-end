@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+	<meta charset="UTF-8">
+	<title>animations实现网页的淡入淡出效果</title>
+	<style>
+		div{
+			background-color: yellow;
+			width: 500px;
+			height: 500px;
+			color: #000000;
+			text-align: center;
+			-webkit-animation-name: mycolor;
+			        animation-name: mycolor;
+			-webkit-animation-duration: 5s;
+			        animation-duration: 5s;
+			-webkit-animation-timing-function: case;
+			        animation-timing-function: case;
+		}
+		@-webkit-keyframes mycolor{
+			0%{
+				opacity: 0;
+				width: 100px;
+				height: 100px;
+			}
+			100%{
+				opacity: 1;
+				width: 500px;
+				height: 500px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

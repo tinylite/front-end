@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+	<meta charset="UTF-8">
+	<title>animations实现自动播放动画效果</title>
+	<style>
+		div{
+			position: absolute;
+			background-color: yellow;
+			top: 100px;
+			width: 500px;
+			height: 100px;
+			line-height: 100px;
+			color: #000000;
+			text-align: center;
+			-webkit-animation-name: mycolor;
+			        animation-name: mycolor;
+			-webkit-animation-duration: 5s;
+			        animation-duration: 5s;
+			-webkit-animation-timing-function: linear;
+			        animation-timing-function: linear;
+	        -webkit-animation-iteration-count: infinite;
+	                animation-iteration-count: infinite;
+		}
+		@-webkit-keyframes mycolor{
+			0%{
+				background-color: red;
+				-webkit-transform: rotate(0deg);
+				        transform: rotate(0deg);
+			}
+			40%{
+				background-color: darkblue;
+				-webkit-transform: rotate(30deg);
+				        transform: rotate(30deg);
+			}
+			70%{
+				background-color: yellow;
+				-webkit-transform: rotate(-0deg);
+				        transform: rotate(-0deg);
+			}
+			100%{
+				background-color: red;
+				-webkit-transform: rotate(0deg);
+				        transform: rotate(0deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div>示例文字</div>
+</body>
+</html>
