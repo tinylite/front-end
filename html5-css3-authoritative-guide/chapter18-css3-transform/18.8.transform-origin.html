@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+	<meta charset="UTF-8">
+	<title>改变变形的基准点到左下角</title>
+	<style>
+		div{
+			width: 300px;
+			height:200px;
+			background-color: yellow;
+			text-align: center;
+			display: inline-block;
+		}
+		div#a{
+			background-color: pink;
+		}
+		div#b{
+			background-color: green;
+			-webkit-transform: rotate(45deg);
+			        transform: rotate(45deg);
+			-webkit-transform-origin: left bottom;
+			        transform-origin: left bottom;
+		}
+	</style>
+</head>
+<body>
+	<div id="a">示例文字</div>
+	<div id="b">示例文字</div>
+</body>
+</html>
