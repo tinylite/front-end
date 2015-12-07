@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+	<meta charset="UTF-8">
+	<title>03.jQuery选择</title>
+	<style>
+		div{
+			width: 300px;
+			height: 250px;
+			background: pink;
+			border: 1px solid #000;
+		}
+	</style>
+	<!-- JavaScript原生写法 -->
+	<!-- <script type="text/javascript">
+		window.onload = function(){
+			var btns = document.getElementsByTagName("button");
+			for(i=0; i<btns.length; i++){
+				btns[i].onclick = function () {
+					alert("ok");
+				}
+			}
+		};
+	</script> -->
+	<!-- jQuery写法 -->
+	<script type="text/javascript" src="../jquery-1.7.2.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			/*$("button").click(function(){
+				alert("ok");
+			});*/
+			/*$(".current").click(function(){
+				$("div").hide();
+			});*/
+			$("#btn").click(function(){
+				$("div").hide();
+			});
+		});
+	</script>
+</head>
+<body>
+	<button id="btn">id=btn按钮1</button>
+	<button class="current">class=current按钮1</button>
+	<button>按钮1</button>
+	<button>按钮1</button>
+	<button class="current">class=current按钮1</button>
+	<div>内容</div>
+</body>
+</html>
