@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+	<meta charset="UTF-8">
+	<title>04.jQuery开关</title>
+	<style>
+		div{
+			width: 200px;
+			height: 100px;
+			background: gray;
+			border: 1px solid #000;
+		}
+	</style>
+	<!-- JavaScript原生写法 -->
+	<!-- <script type="text/javascript">
+		window.onload = function(){
+			var btn = document.getElementsByTagName("button");
+			var div = document.getElementsByTagName("div");
+			btn[0].onclick = function(){
+				if(div[0].style.display == "block"){
+					div[0].style.display = "none";
+				}else{
+					div[0].style.display = "block";
+				}
+			};
+		};
+	</script> -->
+	<!-- jQuery写法 -->
+	<script type="text/javascript" src="../jquery-1.7.2.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("button").click(function(){
+				$('div').toggle();
+			});
+		});
+	</script>
+</head>
+<body>
+	<button>开关</button>
+	<div style="display:block;">内容</div>
+</body>
+</html>
